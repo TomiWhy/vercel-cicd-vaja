@@ -25,7 +25,7 @@ Spletna stran vsebuje osnovno predstavitev CI/CD postopka in gumb, s katerim pre
 
 ## Struktura projekta
 
-```text
+
 vercel-cicd-vaja/
 ├── index.html
 ├── style.css
