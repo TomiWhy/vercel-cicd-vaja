@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Vercel vaja - CI/CD</title>
+
+  <meta
+    name="description"
+    content="Enostaven projekt za prikaz GitHub in Vercel CI/CD workflowa."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <strong>Vercel vaja</strong>
+      <a href="#cicd">CI/CD</a>
+      <a href="#deploy">Deploy</a>
+      <a href="#config">Konfiguracija</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="badge">Projektna vaja</p>
+      <h1>Vercel vaja - CI/CD</h1>
+      <p>
+        To je enostavna spletna stran, objavljena na platformi Vercel.
+        Projekt prikazuje uporabo GitHub repozitorija, Pull Requesta,
+        Preview deploya in Production deploya.
+      </p>
+
+      <button id="checkButton" type="button">Preveri delovanje</button>
+      <p id="message" class="message"></p>
+    </section>
+
+    <section id="cicd" class="card">
+      <h2>Kaj prikazuje projekt?</h2>
+      <p>
+        Projekt prikazuje osnovni CI/CD proces. Ko spremembo kode shranim,
+        naredim commit in jo pošljem na GitHub, Vercel samodejno izvede deploy.
+      </p>
+    </section>
+
+    <section id="deploy" class="grid">
+      <article class="card">
+        <h2>Preview deploy</h2>
+        <p>
+          Preview deploy nastane iz ločene veje ali Pull Requesta.
+          Uporablja se za testiranje sprememb pred združitvijo v glavno vejo.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Production deploy</h2>
+        <p>
+          Production deploy je javna verzija aplikacije. V tej vaji nastane
+          po združitvi sprememb v vejo main.
+        </p>
+      </article>
+    </section>
+
+    <section id="config" class="card">
+      <h2>Dodatna konfiguracija</h2>
+      <p>
+        V projektu je prikazana dodatna konfiguracija z Vercel environment
+        variable. Environment variables omogočajo, da konfiguracijske vrednosti
+        niso zapisane neposredno v kodo.
+      </p>
+
+      <ul>
+        <li>Platforma: Vercel</li>
+        <li>Repozitorij: GitHub</li>
+        <li>Workflow: branch → commit → push → PR → preview → merge → production</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Izdelano za projektno vajo. Tehnologije: HTML, CSS, JavaScript, GitHub in Vercel.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
